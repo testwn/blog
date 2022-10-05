@@ -1,0 +1,19 @@
+// 主题色
+$theme-color: #2980B9;
+
+// 主要内容宽度
+$content-width: 960px;
+
+@font-face {
+  font-family: "title-font";
+  src: url("/font/title-font.woff2");
+}
+
+.navbar .site-name {
+  font-family: "title-font";
+}
+
+.home.project .hero h1 {
+  font-weight: 300;
+  font-family: 'title-font';
+}
