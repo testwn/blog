@@ -6,7 +6,15 @@ export default navbar([
         link: "/",
     },
     {
-        text: "功能测试",
-        link: "/functional-test/测试工作总结.md",
+        text: "测试",
+        link: "/test/functional-test/测试工作总结.md",
+    },
+    {
+        text: "Linux系统",
+        link: "/linux/Linux执行命令.md",
+    },
+    {
+        text: "python",
+        link: "/python/python-base/python1.md",
     },
 ]);
