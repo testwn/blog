@@ -33,11 +33,12 @@ export default sidebar({
             ]
         },
         {
-            text: "性能自动化测试",
+            text: "性能测试",
             prefix: "performance-testing",
             collapsable: true,
             children: [
                 "性能测试基础概念.md",
+                "性能测试计划内容.md",
             ]
         },
         {
