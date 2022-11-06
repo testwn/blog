@@ -28,7 +28,7 @@ export default sidebar({
             prefix: "app-automation",
             collapsable: true,
             children: [
-                "app-1.md",
+                "ADB Android调试桥.md",
                 "app-2.md",
             ]
         },
