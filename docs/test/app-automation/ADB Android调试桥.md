@@ -9,11 +9,11 @@ date: 2022-11-05 00:00:01
 
 1、ADB全名时Android Debug Bridge，是一个调试工具；
 
-2、ADB时一个C/S架构的命令行工具，由三部分组成，ADB就是连接收集个电脑通信的桥梁，只要这个桥梁建立起来，那么就可以通过电脑来控制手机。
+2、ADB时一个C/S架构的命令行工具，由三部分组成，ADB就是连接手机个电脑通信的桥梁，只要这个桥梁建立起来，那么就可以通过电脑来控制手机。
 
 ## ADB工作原理
 
-1、ADB时Android SDK里的一个工具，用这个工具可以直接操作管理Android模拟器或者真实的Android设备，它只要的功能有
+1、ADB是Android SDK里的一个工具，用这个工具可以直接操作管理Android模拟器或者真实的Android设备，它主要的功能有：
 
 - 在设备上运行Shell命令，将本地APK软件安装至模拟器或Android设备；
 - 管理设备或手机模拟器上的预定端口；
@@ -22,7 +22,7 @@ date: 2022-11-05 00:00:01
 2、ADB是一个客户端--服务器程序，包括三个组件
 
 - Client端（客户端）：运行在pc端。该组件发送命令，可以通过ADB命令从命令行终端调用客户端，对Android应用进行安装，卸载及调试等操作；
-- Daemon（后台程序）：改组件在设备上运行命令。守护进程，运行在调试设备中，手机或模拟器，用来接收并执行ADB命令。后台程序在每个模拟器或设备实列上作为后台程序运行；
+- Daemon（后台程序）：该组件在设备上运行命令。守护进程，运行在调试设备中，手机或模拟器，用来接收并执行ADB命令。后台程序在每个模拟器或设备实列上作为后台程序运行；
 - Sever端（服务器）：该组件运行在pc端，客户端到Android设备上ADB后台进程的连接，负责管理Client和Daemon进行通信。服务器在开发计算机上作为后台进程运行。
 
 ## ADB常见命令
@@ -47,13 +47,9 @@ adb logcat
 
 4、查看设备
 
-adb devices
-
 ```bash
-adb logcat
+adb devices
 ```
-
-
 
 5、连接状态
 
@@ -75,74 +71,46 @@ adb kill-server
 
 8、电脑推送到手机
 
-
-
 ```bash
 adb push local remote
 ```
 
-
-
 9、手机拉取到电脑
-
-
 
 ```bash
  adb pull remote loca
 ```
 
-
-
 10、重启机器
-
-
 
 ```bash
  adb reboot
 ```
 
-
-
 11、获取序列号
-
-
 
 ```bash
 adb get-serialno
 ```
 
-
-
 12、重启到bootloader，即刷机模式
-
-
 
 ```bash
 adb reboot bootloader
 ```
 
-
-
 13、重启到recovery，即恢复模式
-
-
 
 ```bash
 adb reboot recovery
 ```
 
-
-
 14、安装apk
-
-
 
 ```bash
 adb install <apkfile> 
 比如：adb install baidu.apk
 ```
-
-
 
 15、安装apk到sd卡
 
