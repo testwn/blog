@@ -13,11 +13,11 @@ date: 2022-10-28 00:00:01
 
 右键点击测试计划，选择添加->非测试元件->HTTP代理服务器
 
-![image-20221028213350898](C:\Users\weinian\AppData\Roaming\Typora\typora-user-images\image-20221028213350898.png)
+![image-20221028213350898](https://minio.testwn.com/img/blog/166770591588416.png)
 
 2.HTTP代理服务器参数设置
 
-![image-20221029150316458](C:\Users\weinian\AppData\Roaming\Typora\typora-user-images\image-20221029150316458.png)
+![image-20221029150316458](https://minio.testwn.com/img/blog/166770591605298.png)
 
 1.启动按钮：在录制脚本前启动，弹出框点确定即可
 
@@ -33,7 +33,7 @@ date: 2022-10-28 00:00:01
 
 2.再次开启浏览器，提示未连接到互联网，说明代理设置成功，需要启动jmeter代理服务
 
-![image-20221029170653728](C:\Users\weinian\AppData\Roaming\Typora\typora-user-images\image-20221029170653728.png)
+![image-20221029170653728](https://minio.testwn.com/img/blog/166770591587993.png)
 
 
 
@@ -51,7 +51,7 @@ date: 2022-10-28 00:00:01
 
 6.导入jmeter证书后，再次启动hmeter代理服务录制，就可以录制了
 
-![image-20221029170352312](C:\Users\weinian\AppData\Roaming\Typora\typora-user-images\image-20221029170352312.png)
+![image-20221029170352312](https://minio.testwn.com/img/blog/166770591605361.png)
 
 ## HTTP代理服务器参数设置
 

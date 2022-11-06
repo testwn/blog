@@ -39,7 +39,7 @@ export default sidebar({
             children: [
                 "性能测试基础概念.md",
                 "性能测试计划内容.md",
-                "Jmeter性能压测脚本录制与编写.md"
+                "Jmeter性能压测脚本录制与编写.md",
             ]
         },
         {
