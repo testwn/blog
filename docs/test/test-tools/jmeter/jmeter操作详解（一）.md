@@ -39,7 +39,7 @@ Jmeter是采用java语言开发的一款用来进行互联网接口自动化测�
 
   下载**[plugins-manager.jar](https://jmeter-plugins.org/get/)**并放入`lib/ext`目录，然后重启 JMeter。
 
-  ![image-20221107102240021](C:\Users\weinian\AppData\Roaming\Typora\typora-user-images\image-20221107102240021.png)
+  ![image-20221107102240021](https://minio.testwn.com/img/blog/167126006425263.png)
 
   然后重启jmeter，即可生效，在选项最后即可看见
 
