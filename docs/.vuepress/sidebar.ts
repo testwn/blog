@@ -5,7 +5,7 @@ export default sidebar({
         {
             // 侧边栏目录名称
             text: "功能测试",
-            // 侧边栏子目录路径m名称
+            // 侧边栏子目录路径名称
             prefix: "functional-test",
             collapsable: true,
             children: [
@@ -19,7 +19,7 @@ export default sidebar({
             prefix: "web-automation",
             collapsable: true,
             children: [
-                "web-1.md",
+                "Selenium-API操作.md",
                 "web-2.md",
             ]
         },
@@ -48,6 +48,27 @@ export default sidebar({
             collapsable: true,
             children: [
                 "主流测试工具简介.md",
+                {
+                    text: "JMeter",
+                    prefix: "jmeter",
+                    collapsable: true,
+                    children: [
+                        "jmeter操作详解（一）.md",
+                        "jmeter操作详解（二）.md",
+                        "jmeter关联.md",
+                        "jmeter断言.md",
+                    ]
+                },
+                {
+                    text: "抓包工具",
+                    prefix: "packet_capture_tool",
+                    collapsable: true,
+                    children: [
+                        "Charles.md",
+                        "F12开发者工具.md",
+                        "Fiddler.md",
+                    ]
+                },
             ]
         },
     ],
