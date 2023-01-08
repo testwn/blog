@@ -15,6 +15,6 @@ export default navbar([
     },
     {
         text: "python",
-        link: "/python/python-base/python1.md",
+        link: "/python/python-base/python基础语法.md",
     },
 ]);

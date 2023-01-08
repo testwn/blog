@@ -96,7 +96,7 @@ export default sidebar({
             prefix: "python-base",
             collapsable: true,
             children: [
-                "python1.md",
+                "python基础语法.md",
             ]
         },
         {
@@ -107,5 +107,17 @@ export default sidebar({
                 "python2.md",
             ]
         },
+    ],
+    "/JavaScript": [
+        {
+            text: "JavaScript",
+            prefix: "JavaScript",
+            collapsable: true,
+            children: [
+                "JS语法（一）.md",
+                "JS语法（二）.md",
+            ]
+        },
+
     ],
 })
