@@ -1,13 +1,13 @@
 import {sidebar} from "vuepress-theme-hope";
 
-export default sidebar({
+export const sidebarConfig = sidebar({
     "/test": [
         {
             // 侧边栏目录名称
             text: "功能测试",
             // 侧边栏子目录路径名称
             prefix: "functional-test",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "测试工作总结.md",
                 "test.md",
@@ -17,7 +17,7 @@ export default sidebar({
         {
             text: "WEB自动化测试",
             prefix: "web-automation",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "Selenium-API操作.md",
                 "web-2.md",
@@ -26,7 +26,7 @@ export default sidebar({
         {
             text: "APP自动化测试",
             prefix: "app-automation",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "ADB Android调试桥.md",
                 "app-2.md",
@@ -35,7 +35,7 @@ export default sidebar({
         {
             text: "性能测试",
             prefix: "performance-testing",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "性能测试基础概念.md",
                 "性能测试计划内容.md",
@@ -45,13 +45,13 @@ export default sidebar({
         {
             text: "测试工具",
             prefix: "test-tools",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "主流测试工具简介.md",
                 {
                     text: "JMeter",
                     prefix: "jmeter",
-                    collapsable: true,
+                    collapsible: true,
                     children: [
                         "jmeter操作详解（一）.md",
                         "jmeter操作详解（二）.md",
@@ -62,7 +62,7 @@ export default sidebar({
                 {
                     text: "抓包工具",
                     prefix: "packet_capture_tool",
-                    collapsable: true,
+                    collapsible: true,
                     children: [
                         "Charles.md",
                         "F12开发者工具.md",
@@ -75,7 +75,7 @@ export default sidebar({
     "/linux": [
         {
             text: "Linux",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "Linux执行命令.md",
                 "shell编程.md",
@@ -83,7 +83,7 @@ export default sidebar({
         },
         {
             text: "Linux2",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "Linux执行命令.md",
                 "shell编程.md",
@@ -94,7 +94,7 @@ export default sidebar({
         {
             text: "python基础",
             prefix: "python-base",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "python基础语法.md",
             ]
@@ -102,7 +102,7 @@ export default sidebar({
         {
             text: "python进阶",
             prefix: "python-advance",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "python2.md",
             ]
@@ -112,7 +112,7 @@ export default sidebar({
         {
             text: "JavaScript",
             prefix: "JavaScript",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "JS语法（一）.md",
                 "JS语法（二）.md",
