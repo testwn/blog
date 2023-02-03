@@ -11,7 +11,7 @@ export const sidebarConfig = sidebar({
             children: [
                 "测试工作总结.md",
                 "test.md",
-                "测试.md",
+                "接口测试的关注点.md",
             ]
         },
         {
