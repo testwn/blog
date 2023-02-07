@@ -17,4 +17,8 @@ export const navbarConfig = navbar([
         text: "python",
         link: "/python/python-base/python基础语法.md",
     },
+    {
+        text: "持续集成与持续交付",
+        link: "/CI_CD/CI/持续集成的基础.md",
+    },
 ]);

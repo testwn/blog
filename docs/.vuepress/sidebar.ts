@@ -120,4 +120,24 @@ export const sidebarConfig = sidebar({
         },
 
     ],
+    "/CI/CD": [
+        {
+            text: "持续集成",
+            prefix: "CI",
+            collapsible: true,
+            children: [
+                "持续集成的基础.md",
+                "JS语法（二）.md",
+            ]
+        },
+        {
+            text: "持续交付",
+            prefix: "CD",
+            collapsible: true,
+            children: [
+                "JS语法（一）.md",
+                "JS语法（二）.md",
+            ]
+        },
+    ],
 })
