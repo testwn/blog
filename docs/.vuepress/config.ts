@@ -6,7 +6,7 @@ import {searchProPlugin} from "vuepress-plugin-search-pro";
 export default defineUserConfig({
     lang: "zh-CN",
     title: "薇念的小窝",
-    description: "测试点工一枚，博客主要分享自己的编程学习笔记、编程技巧、实用工具...等等，当然也会分享职场生活，人生经历。",
+    description: "测试点工一枚，文章主要分享自己的编程学习笔记、编程技巧、实用工具...等等，当然也会分享职场生活，人生经历。",
     base: "/",
     // 指定 vuepress build 的输出目录
     dest: "./dist",

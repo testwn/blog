@@ -41,6 +41,43 @@ del name
 
 销毁后，这个变量就像没有定义过一样，再使用它的话就会产生异常
 
+## 序列详解
+
+序列的定义：指的是一块可存放多个值的连续内存空间，这些值按一定顺序排列，可通过每个值所在位置的编号（称为索引）访问它们。
+
+在Python中，序列类型包括字符串，列表，元组，集合和字典，这些序列支持一下几种操作，但是比较特殊的是，字典和集合不支持索引，切片，相加和相乘操作
+
+### 序列索引
+
+### 序列切片
+
+```python
+# 切片string[起始下标:终止下标：步长]，顾头不顾尾，查找字符串中的一段值，用于截取某些字符
+name = 'weinian'   
+
+# 输出weini
+print(name[0: 5])
+
+# 输出下标0至下标为5，并且步长为2的值。输出wii
+print(name[0: 5: 2])
+
+# 输出字符串全部下标的值，并且步长为2,等价于name[0: 7: 2]。输出wiin。以下两种输出方式都可。
+print(name[0:: 2])
+print(name[0: len(name): 2])
+
+# 倒序输出，步长为负数，等价name[6:: -1],输出nainiew。这里需要注意的是，在python中字符串打印超出长度不会报错，但是在java中就会报错，具体原理这里并未深究，可能是python自己的特色。
+print(name[:: -1])
+print(name[len(name)-1:: -1])
+print(name[7:: -1])
+print(name[6:: -1])
+print(name[5:: -1])
+print(name[8:: -1])
+```
+
+### 序列相加
+
+### 序列相乘
+
 ## 字符串常用操作
 
 字符串作用：记录描述性质的数据
@@ -210,9 +247,16 @@ num3 = '123168'
 print(num3.endswith('168'))
 ```
 
-### 4、查找`find()和index()`与替换
+### 4、查找`find()和index()`
 
-
+```python
+# string.find(sub_string)和string.index(sub_string) 查找字符串sub_string是否在string中的正序下标，find方法找不到时返回-1；index方法找不到时报错。
+msg = 'aabbccssdd'
+# findzai在查找时，如果出现不同下标相同的值的时候，返回第一个值出现的下标
+print(msg.find('a'))  # 0
+print(msg.find('x'))  # 1
+print(msg.index('x'))  # ValueError: substring not found
+```
 
 ### 5、字符串长度`len()`
 
@@ -233,71 +277,261 @@ print(len(name))
 %%：输出百分号
 ```
 
-如果给%d传入一个浮点数，那么它会自动将它转换成整数
-
-### 7、从键盘输入
-
-
-
-### 8、切片与索引
-
-8.1 切片
-
 ```python
-# 切片string[起始下标:终止下标：步长]，顾头不顾尾，查找字符串中的一段值，用于截取某些字符
-name = 'weinian'   
+# 字符串格式化输出format函数。除%号之外，使用format格式化，可以多次服用同一个值
+# 她的名字叫薇念，网址为testwn.com
+print('我的名字是{0}，网址是{1}'.format('薇念', 'testwn.com'))
 
-# 输出weini
-print(name[0: 5])
-
-# 输出下标0至下标为5，并且步长为2的值。输出wii
-print(name[0: 5: 2])
-
-# 输出字符串全部下标的值，并且步长为2,等价于name[0: 7: 2]。输出wiin。以下两种输出方式都可。
-print(name[0:: 2])
-print(name[0: len(name): 2])
-
-# 倒序输出，步长为负数，等价name[6:: -1],输出nainiew。这里需要注意的是，在python中字符串打印超出长度不会报错，但是在java中就会报错，具体原理这里并未深究，可能是python自己的特色。
-print(name[:: -1])
-print(name[len(name)-1:: -1])
-print(name[7:: -1])
-print(name[6:: -1])
-print(name[5:: -1])
-print(name[8:: -1])
 ```
 
-8.2 索引
-
-
-
-### 9、判断字符串的包含关系`in`和`not in`
+### 8、判断字符串的包含关系`in`和`not in`
 
 ```python
+site_name = 'weinian blog'
+# in判断，当包含时返回True，结果为True
+print('weinian' in site_name)
+# not in判断，当不包含时返回True，结果为False
+print('weinian' not in site_name)
 ```
 
+### 9、字符串拼接`join()`
 
+```python
+# 字符串拼接
+str1 = '眼下的生活'
+str2 = '不是没有快乐'
+str3 = '只是所有的快乐都暗含着一层谨慎的底色。'
+print(','.join([str1, str2, str3]))
+```
 
+### 10、删除字符串`del()`
 
+```python
+# 删除字符串，后续不可以再使用该变量，否则报错NameError: name 'name' is not defined
+name = 'weinian'
+print(name)
+del name
+print(name)
+```
 
-### 10、字符串拼接`join()`
+### 11、统计一个字符串出现的次数`count()`
 
-
-
-### 11、删除字符串`del()`
-
-
-
-### 12、统计一个字符串出现的次数`count()`
-
-
-
-### 13、左右两侧不足指定位数时，添加指定的字符
-
-
+```python
+# 统计字符串出现的次数
+msg = 'aabbccssdd'
+print(msg.count('a'))
+```
 
 ## 元组（tuple）常用操作
 
+元组的定义：元组是Python中另一个重要的序列结构，和列表类似，元组也是由一系列按特定顺序排序的元素组成
+
+元组和列表的不同之处：列表的元素是可以更改的，包括修改元素值，删除和插入元素，所以列表是可变序列。而元组一旦被创建，它的元素就不可更改了，所以元组是不可变序列。
+
+### 创建元组
+
+### 访问元组（通过索引访问）
+
+### 修改元组（创建一个新的元组去代替旧的原则）
+
+### 删除元组
+
+### 元组函数
+
+1、join
+
+2、count
+
+3、in
+
+4、index
+
+5、del
+
+
+
+
+
 ## 列表（list）常用操作
+
+定义：列表可以理解为可变的原则，它的使用方式跟原则差不多，区别就是列表可以动态的增加，修改，删除元素。
+
+### 创建列表
+
+```py
+# 定义一个空列表
+lst = []
+lst1 = list()
+# 定义一个带有初始值的列表
+lst2 = [1, 2, 3]
+lst3 = ['a', 1, 2, 'b']
+lst4 = list(range(5))
+lst5 = list("abc")
+lst6 = list((1, 2, 3))
+```
+
+### 列表增、删、改元素操作
+
+```python
+# 定义一个列表
+lst = ['a', 'b']
+# 在列表中修改一个元素
+lst[-1] = 'c'
+print(lst)
+
+# 在列表中添加一个元素
+lst.append('b')
+print(lst)
+
+# 删除列表中的元素
+del lst[1]
+print(lst)
+```
+
+### 列表函数
+
+1、append函数
+
+```python
+# 列表函数append()
+lst = ['a', 'b']
+# 在末尾追加一个元素。输出['a', 'b', 'c']
+lst.append('c')
+print(lst)
+# 在末尾追加一个元组，整个元组被当成一个元素。输出['a', 'b', 'c', ('d', 'e', 'f')]
+a = ('d', 'e', 'f')
+lst.append(a)
+print(lst)
+# 在末尾追加一个列表.输出['a', 'b', 'c', ('d', 'e', 'f'), ['g', 'h', 'i']]
+b = ['g', 'h', 'i']
+lst.append(b)
+print(lst)
+```
+
+2、insert函数
+
+在列表中间某个位置（任意位置）插入元素
+
+语法表达式如下：
+
+```python
+listname.insert(index , obj)
+```
+
+其中，index 表示指定位置的索引值。insert() 会将 obj 插入到 listname 列表第 index 个元素的位置。
+
+当插入列表或者元祖时，insert() 也会将它们视为一个整体，作为一个元素插入到列表中，这一点和 append() 是一样的。
+
+```python
+lst = ['a', 'b']
+# 插入一个元素。输出['a', 'c', 'b']
+lst.insert(-1, 'c')
+print(lst)
+
+# 插入元组，整个元组被当成一个元素。输出['a', 'c', 'weinian', 'b']
+wn = ('weinian')
+lst.insert(-1, wn)
+print(lst)
+
+# 插入列表，整个列表被当成一个元素。输出['a', 'c', 'weinian', ['weiwei'], 'b']
+wn1 = ['weiwei']
+lst.insert(-1, wn1)
+print(lst)
+
+# 插入字符串，整个字符串被当成一个元素。['a', 'c', 'weinian', ['weiwei'], 'haha', 'b']
+lst.insert(-1, 'haha')
+print(lst)
+```
+
+3、extend函数
+
+在列表末尾插入元素。与append函数有点类似，区别是append函数每次只能添加一个元素，而extend可以添加一组元素
+
+```python
+# 定义一个空列表
+lst = []
+lst.extend(range(5))
+print(lst)  # [0, 1, 2, 3, 4]
+lst.extend([5, 6, 7])
+print(lst)  # [0, 1, 2, 3, 4, 5, 6, 7]
+```
+
+4、pop函数
+
+每次调用pop函数会从列表中弹出一个元素，接着上面的lst操作。如果想弹出其他位置的元素，可以传一个位置参数给pop
+
+```python
+```
+
+5、remove函数
+
+删除指定的内容的元素。remove函数会从左至右找到与指定的值想匹配的第一个元素，并将它删除
+
+```python
+lst = [1, 2, 1, 'a', 'b', 'c']
+lst.remove('a')
+print(lst)   # lst的值为[1, 2, 1, 'b', 'c']
+lst.remove(1)   # 注意这里的1是元素值，不是索引
+print(lst)   # lst的值为[2, 1, 'b', 'c']
+```
+
+6、clear函数
+
+清空列表内的所有元素
+
+```python
+lst = [1,2,3,4]
+lst.clear()
+print(lst) # 结果为[]
+```
+
+7、reverse函数
+
+将整个列表反转
+
+```python
+# 定义一个空列表
+lst = []
+lst.extend(range(7))
+print(lst)  # [0, 1, 2, 3, 4, 5, 6]
+# 将上面列表反转
+lst.reverse()
+print(lst)
+```
+
+8、sort函数
+
+按照一定的规则将列表中的元素重新排序，对于数值，默认按从小到大的顺序排序，如果这里想要让列表从大到小排序，可以加上reverse参数。
+
+```python
+# 定义一个列表
+lst = [3, 5, 2, 6, 7, 8, 0, 1, 4]
+lst.sort()
+print(lst)   # 输出[0, 1, 2, 3, 4, 5, 6, 7, 8]
+# 如果想让列表从大到小排列，可以加上reverse参数
+lst.sort(reverse=True)
+print(lst)
+```
+
+9、copy函数
+
+复制原有列表为一个新的列表
+
+```python
+lst1 = [1, 2, 3]
+lst2 = lst1.copy()
+lst1.append(4)
+print(lst1) # [1, 2, 3, 4]
+print(lst2) # [1, 2, 3]
+```
+
+10、del，pop，remove的区别
+
+del：删除指定下标索引的元素
+
+remove：删除指定内容的元素
+
+pop：删除列表中的一个元素
 
 ## 字典（dict）常用操作
 

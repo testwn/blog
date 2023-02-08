@@ -71,6 +71,16 @@ export const sidebarConfig = sidebar({
                 },
             ]
         },
+        {
+            // 侧边栏目录名称
+            text: "大数据测试",
+            // 侧边栏子目录路径名称
+            prefix: "big-data",
+            collapsible: true,
+            children: [
+                "大数据测试基础.md",
+            ]
+        },
     ],
     "/linux": [
         {
