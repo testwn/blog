@@ -115,6 +115,9 @@ export const sidebarConfig = sidebar({
             collapsible: true,
             children: [
                 "python2.md",
+                "Numpy详解.md",
+                "Pandas详解.md",
+                "Matplotlib详解.md",
             ]
         },
     ],
