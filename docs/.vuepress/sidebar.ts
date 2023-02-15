@@ -114,10 +114,14 @@ export const sidebarConfig = sidebar({
             prefix: "python-advance",
             collapsible: true,
             children: [
-                "python2.md",
-                "Numpy详解.md",
-                "Pandas详解.md",
                 "Matplotlib详解.md",
+                "Numpy详解.md",
+                "OS模块.md",
+                "Pandas详解.md",
+                "python+requests做接口自动化测试.md",
+                "python进阶.md",
+                "Sys模块详解.md",
+                "测试工程师最常用的python库.md",
             ]
         },
     ],
