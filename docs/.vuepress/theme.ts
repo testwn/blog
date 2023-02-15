@@ -34,7 +34,10 @@ export default hopeTheme({
     // 文章最后更新时间
     lastUpdated: true,
     // 页脚信息，可以输入HTMLString
-    footer: "",
+    footer:
+        "<a target=\"_blank\" rel=\"external nofollow noopener noreferrer\" href=\"https://beian.miit.gov.cn/\">" +
+            "湘ICP备2023002307号" +
+        "</a>",
     // 页脚版权信息
     copyright: "Copyright © 2022-present 薇念",
     // 是否默认显示页脚
