@@ -28,6 +28,13 @@ hello('python')
 函数的参数可以有一个，也可以有多个，也可以没有参数。这取决于在定义函数的时候如何定义参数部分。上面我们定义的函数只有一个参数，现在我们定义两个参数的函数
 
 ```python
+def hello(name, sex):
+    if sex == '男':
+        print('hello, Mr', name)
+    elif sex == '女':
+        print('helllo, Miss', name)
+hello('zhang', '男')
+hello('Wang', '女')
 ```
 
 
