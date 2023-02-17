@@ -11,7 +11,7 @@ export const sidebarConfig = sidebar({
             children: [
                 "测试工作总结.md",
                 "test.md",
-                "接口测试的关注点.md",
+                "接口测试详解.md",
             ]
         },
         {
@@ -57,6 +57,7 @@ export const sidebarConfig = sidebar({
                         "jmeter操作详解（二）.md",
                         "jmeter关联.md",
                         "jmeter断言.md",
+                        "断言失败则把响应内容写入到文件.md",
                     ]
                 },
                 {
