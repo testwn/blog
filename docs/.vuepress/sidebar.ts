@@ -70,6 +70,14 @@ export const sidebarConfig = sidebar({
                         "Fiddler.md",
                     ]
                 },
+                {
+                    text: "Postman",
+                    prefix: "Postman",
+                    collapsible: true,
+                    children: [
+                        "Postman简单用法.md",
+                    ]
+                },
             ]
         },
         {
