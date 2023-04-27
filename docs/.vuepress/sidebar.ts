@@ -116,6 +116,7 @@ export const sidebarConfig = sidebar({
             collapsible: true,
             children: [
                 "python基础语法.md",
+                "Python+Requests.md",
             ]
         },
         {
