@@ -14,6 +14,7 @@ export default hopeTheme({
     navbar: navbarConfig,
     // sidebar
     sidebar: sidebarConfig,
+    sidebarSorter: "filename",
 
     // 主题功能选项开始==================================================================
 

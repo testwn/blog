@@ -7,15 +7,15 @@ export const navbarConfig = navbar([
     },
     {
         text: "测试",
-        link: "/test/functional-test/测试工作总结.md",
+        link: "/test/01.App测试/01、移动端测试基础.md",
     },
     {
         text: "Linux系统",
-        link: "/linux/Linux执行命令.md",
+        link: "/linux/01、Linux执行命令.md",
     },
     {
         text: "python",
-        link: "/python/python-base/python基础语法.md",
+        link: "/python/python-base/01、Python+Requests.md",
     },
     {
         text: "持续集成与持续交付",
